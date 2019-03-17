@@ -128,6 +128,10 @@ class Meting_Action extends Typecho_Widget implements Widget_Interface_Do
                 $url = str_replace('http://m7.', 'https://m9.', $url);
                 $url = str_replace('http://m10.', 'https://m10.', $url);
             }
+            
+            if ($server == 'tencent') {
+                $url = str_replace('http://', 'https://', $url);
+            }
 
             if ($server == 'xiami') {
                 $url = str_replace('http://', 'https://', $url);
